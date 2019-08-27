@@ -98,10 +98,10 @@ class DateTimeFormatTryAndError(FormatTryAndError):
 
 class Column(object):
 	int_ranges = [
-			(-128, 127, "tinyint"),
-			(-32768, 32767, "smallint"),
-			(-2147483648, 2147483647, "int"),
-			(-9223372036854775808, 9223372036854775807, "bigint")
+			(-127, 127, "tinyint"),
+			(-32767, 32767, "smallint"),
+			(-2147483647, 2147483647, "int"),
+			(-9223372036854775807, 9223372036854775807, "bigint")
 		]
 
 	__slots__ = "id", "name", "null_value", "num_nulls", "num_values", "int_minmax", "decpre_minmax", "decpost_minmax", "len_minmax", "guess_date", "guess_datetime"
